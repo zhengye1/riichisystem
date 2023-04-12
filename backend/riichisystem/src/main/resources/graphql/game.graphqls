@@ -1,0 +1,33 @@
+type GameRules{
+    id:ID
+    name:String
+    gameType:GameType
+    startingScore:String
+    tiebreaker:TieBreaker
+    riichiStickResolution:RiichiStickResolution
+    notenPenalty:Int!
+    honbaSize:Int!
+    oka:Int!
+    uma0Over:[Int]
+    uma1Over:[Int]
+    uma2Over:[Int]
+    uma3Over:[Int]
+    chomboPenalty:Int
+    kiriageMangan:Boolean
+    multiYakuman:Boolean
+    multiRon:Boolean
+}
+
+enum GameType{
+    YONMA
+    SANMA
+}
+enum TieBreaker{
+    DIVIDE_EQUALLY
+    WIND_ORDER
+}
+
+enum RiichiStickResolution{
+    FIRST_PLACE
+    LOST_FOREVER
+}
